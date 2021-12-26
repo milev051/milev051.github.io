@@ -2,7 +2,6 @@ body {
   margin: 0;
   text-align: center;
   font-family: "Gill Sans", sans-serif;
-  background-color: #15CAFF;
 }
 
 .HEADER {
@@ -19,45 +18,26 @@ body {
   background-color: red;
 }
 
-.WALL {
+.BLOCK-SIZE-SCREEN {
   height: 100vh;
 }
 
-.official-title-left {
-  height: 5vh;
-  width: 75%;
-  float: left;
-  align-items: center;
-  color: #fff;
-  background-color: #15CAFF;
+.WALL-HEADER {
+
 }
 
-.official-title-right {
-  height: 5vh;
-  width: 24%;
-  float: right;
-  color: #fff;
-  background-color: #15CAFF;
+.CONTAINER {
+  display: inline-grid;
 }
 
-.CONTAINER-LEFT {
-  width: 75%;
-  float: left;
-}
-
-.CONTAINER-RIGHT {
-  float: right;
-  width: 24%;
-}
-
-.img-container {
+.CONTAINER-img {
   display: inline-block;
-  padding: 1.25%;
 }
 
-.img-container img {
+.CONTAINER-img img {
   width: 30%;
-  margin: 0 1.25%;
+  margin: 1.25% 1.25%;
+  object-fit: cover;
 }
 
 /*TEXT*/
