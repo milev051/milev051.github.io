@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
   text-align: center;
   font-family: "Gill Sans", sans-serif;
 }
@@ -10,16 +11,12 @@ header a {
   padding: 2.5vh;
 }
 
-.vertical-screen-size {
-  height: 100vh;
-}
-
 .flexbox-column-center{
   display: flex;
   flex-direction: column;
 }
 
-.box {
+.padding_bottom_2_5 {
   padding-bottom: 2.5%;
 }
 
