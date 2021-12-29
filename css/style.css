@@ -21,11 +21,9 @@ body {
 .intro {
   padding: 1rem;
 }
-
   .intro img {
     max-width: 100%;
   }
-
   .intro__gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
