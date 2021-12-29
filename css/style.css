@@ -9,22 +9,28 @@ body {
   background-color: black;
 }
 
-.nav__link {
-  padding: 2.5vh;
+.nav {
   display: inline-block;
+  padding: 2.5vh;
+}
+
+.nav__link {
+  padding: 0 2.5vh;
 }
 
 .intro {
-  padding-bottom: 2.5%;
+  padding: 0 0 4% 0;
 }
 
   .intro__gallery {
+    padding: 0 2.5%;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
   }
 
   .intro__gallery img {
-    width: 30%;
-    margin: 1%;
+    max-width: 100%;
   }
 
 /* TYPOGRAPHY */
@@ -41,8 +47,8 @@ a {
   }
 
 .section__title {
-  padding: 5%;
-  font-size: 200%;
+  padding: 1.5rem;
+  font-size: 30px;
   color: #15CAFF;
 }
 
