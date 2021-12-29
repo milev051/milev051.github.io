@@ -32,10 +32,6 @@ body {
     grid-column-gap: 1%;
   }
 
-  .intro__gallery img {
-    max-width: 100%;
-  }
-
 /* TYPOGRAPHY */
 
 a {
