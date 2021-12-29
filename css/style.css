@@ -19,14 +19,17 @@ body {
 }
 
 .intro {
-  padding: 0 0 4% 0;
+  padding: 1rem;
 }
 
+  .intro img {
+    max-width: 100%;
+  }
+
   .intro__gallery {
-    padding: 0 2.5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2%;
+    grid-column-gap: 1%;
   }
 
   .intro__gallery img {
@@ -48,11 +51,14 @@ a {
 
 .section__title {
   padding: 1.5rem;
+  padding-top: 0;
   font-size: 30px;
   color: #15CAFF;
 }
 
 .section__subtitle {
+  padding: 1.5rem;
+  padding-top: 0;
   font-family: "Roboto";
   color: #fff;
 }
