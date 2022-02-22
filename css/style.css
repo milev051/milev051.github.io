@@ -9,22 +9,21 @@ body {
   background-color: black;
 }
 
-.nav {
+nav {
   display: inline-block;
   padding: 2.5vh;
 }
+  nav a{
+    padding: 0 2.5vh;
+  }
 
-.nav__link {
-  padding: 0 2.5vh;
-}
-
-.intro {
+.gallery01 {
   padding: 1rem;
 }
-  .intro img {
+  .gallery01 img {
     max-width: 100%;
   }
-  .intro__gallery {
+  .gallery01_collage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1%;
