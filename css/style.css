@@ -48,8 +48,8 @@ body{
 .section01__animation{
   cursor: pointer;
   filter: saturate(0) blur(0px);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 .section01__animation:hover{
-  filter: saturate(1) blur(10px);
+  filter: saturate(1) blur(0px);
 }
