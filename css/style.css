@@ -56,7 +56,7 @@ body{
 
 /* SECTON 02 */
 
-.section02{
+.section02 {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
   min-height: 100vh;
