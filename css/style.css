@@ -31,12 +31,12 @@ body{
 
 .section01__picture01{
   background-image: url("../img/173 edit_1.jpg");
-  background-size: 110%;
+  background-size: auto 110%;
   background-position: center;
 }
 .section01__picture02{
   background-image: url("../img/MLV_0118.jpg");
-  background-size: 110%;
+  background-size: auto 110%;
   background-position: center;
 }
 .section01__picture03{
