@@ -1,7 +1,11 @@
 /* GENERAL */
 
 :root{
+<<<<<<< HEAD
   --color-primary: #15CAFF;
+=======
+  --text-color-accent: #15CAFF;
+>>>>>>> 03b5118f053af24feef16e962f683228d392d407
 }
 
 *{
@@ -15,6 +19,7 @@ body{
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* SECTION 1 */
 
 .section01{
@@ -46,10 +51,47 @@ body{
 }
 
 .section01__animation{
+=======
+/* UTILITIES */
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  min-height: 100vh;
+
+  text-align: center;
+  vertical-align: center;
+}
+
+.gallery div{
+>>>>>>> 03b5118f053af24feef16e962f683228d392d407
   filter:  saturate(0);
   transition: 0.5s ease;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .section01__animation:hover{
+=======
+
+.gallery div:hover{
+>>>>>>> 03b5118f053af24feef16e962f683228d392d407
   filter: blur(2px) saturate(1);
+}
+
+.bg1{
+  background-image: url("../img/28 edit.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg2{
+  background-image: url("../img/MLV_0191 edit_1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg3{
+  background-image: url("../img/20200812_181734 edit.jpg");
+  background-size: cover;
+  background-position: center;
 }
