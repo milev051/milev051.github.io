@@ -15,7 +15,7 @@ body{
   overflow: hidden;
 }
 
-/* SECTION 01 */
+/* SECTION 1 */
 
 .section01{
   display: grid;
@@ -52,12 +52,4 @@ body{
 }
 .section01__animation:hover{
   filter: saturate(1) blur(10px);
-}
-
-/* SECTON 02 */
-
-.section02 {
-  display: grid;
-  grid-template-columns: repeat(3, 33.33%);
-  min-height: 100vh;
 }
