@@ -1,10 +1,10 @@
-@media (max-aspect-ratio: 9/8) { 
+@media (max-aspect-ratio: 9/10) { 
   
   /* SECTION 1 */
   
   .section01{
     display: grid;
-    grid-template-rows: repeat(3, 33.33%);
+    grid-template-columns: repeat(1, 100%);
     min-height: 100vh;
   }
   
@@ -17,5 +17,25 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: 50% 15%;
   }
+
+ .shape01{
+  }
+  .shape02{
+  }
+  .shape03{
+  }
+
+.section01 p{
+  color: var(--color-primary);
+  font-size: 4vw;
+}
+
+/* SECTION01 TEXT OVERLAY */
+
+.section01 p{
+  position: relative;
+}
+
 }

@@ -1,7 +1,7 @@
 /* GENERAL */
 
 :root{
-  --color-primary: #ff7315;
+  --color-primary: #15c8ff;
 }
 
 *{
@@ -26,7 +26,6 @@ body{
 
 .section01 div {
   position: relative;
-
 }
 
 .section01 img{
@@ -39,6 +38,7 @@ body{
 .section01 p{
   color: var(--color-primary);
   font-size: 2vw;
+  text-shadow: 1px 1px #000000;
 }
 
 /* SECTION01 ANIMATIONS */
@@ -56,7 +56,8 @@ body{
 
 .section01 p{
   position: relative;
+  text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-15%, -50%);
+  transform: translate(-50%, -50%);
 }
