@@ -24,6 +24,7 @@ body{
 }
 
 .section01 p{
+  text-shadow: 100px;
   color: var(--color-primary);
   text-align: center;
   font-size: 2vw;
