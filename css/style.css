@@ -24,7 +24,7 @@ body{
 }
 
 .section01 p{
-  text-shadow: 100px;
+  text-shadow: 100mil milpx;
   color: var(--color-primary);
   text-align: center;
   font-size: 2vw;
@@ -36,7 +36,7 @@ body{
   background-position: center;
 }
 .section01__picture02{
-  background-image: url("../img/MLV_0118.jpg");
+  background-image: url("../img/MLV_0191 edit_1.jpg");
   background-size: auto 110%;
   background-position: center;
 }
