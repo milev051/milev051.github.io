@@ -40,19 +40,23 @@ body{
 
     position: relative;
     width: 90%;
+    margin-bottom: 10%;
 }
 
 button{    
-    font-size: 3vw;
+    font-size: 100%;
     padding: 2% 5%;
     border: none;
     border-radius: 10px;
 
     position: relative;
+    margin-bottom: 15%;
 }
 
 
 /* LANDSCAPE MODE */
-@media (min-aspect-ratio: 10/9) {
-  
+@media (min-aspect-ratio: 8/9) {
+  *{
+      margin: 10%;
+  }
 }
