@@ -8,10 +8,6 @@
     min-height: 100vh;
   }
   
-  .section01 a {
-    position: relative;
-  }
-  
   .section01 img{
     position: absolute;
     height: 100%;
@@ -19,13 +15,6 @@
     object-fit: cover;
     object-position: 50% 15%;
   }
-
- /* .shape01{
-  }
-  .shape02{
-  }
-  .shape03{
-  } */
 
 .section01 p{
   color: var(--color-primary);
@@ -36,6 +25,11 @@
 
 .section01 p{
   position: relative;
+}
+
+
+.section01 img{
+  filter: saturate(1) blur(5px);
 }
 
 }
