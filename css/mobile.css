@@ -16,20 +16,13 @@
     object-position: 50% 15%;
   }
 
-.section01 p{
-  color: var(--color-primary);
-  font-size: 4vw;
-}
+  .section01 p{
+    color: var(--color-primary);
+    font-size: 4vw;
+  }
 
-/* SECTION01 TEXT OVERLAY */
-
-.section01 p{
-  position: relative;
-}
-
-
-.section01 img{
-  filter: saturate(1) blur(5px);
-}
+  .section01 img{
+    filter: saturate(1) blur(5px);
+  }
 
 }
