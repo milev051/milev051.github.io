@@ -8,7 +8,7 @@
     min-height: 100vh;
   }
   
-  .section01 div {
+  .section01 a {
     position: relative;
   }
   
@@ -20,12 +20,12 @@
     object-position: 50% 15%;
   }
 
- .shape01{
+ /* .shape01{
   }
   .shape02{
   }
   .shape03{
-  }
+  } */
 
 .section01 p{
   color: var(--color-primary);
