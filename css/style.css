@@ -1,5 +1,3 @@
-/* GENERAL */
-
 :root{
   --color-primary: #15c8ff;
 }
@@ -7,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
     text-decoration: none;
 }
 
@@ -51,9 +49,34 @@ body{
 
 .section01 img{
   filter: saturate(0) blur(0px);
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 
 .section01 a:hover > img{
   filter: saturate(1) blur(5px);
+  scale: 105%;
+}
+
+
+/* PORTRAIT MODE */
+@media (max-aspect-ratio: 9/10) { 
+  
+  /* SECTION 1 */
+
+  .section01{
+    grid-template-columns: repeat(1, 100%);
+  }
+  
+  .section01 img{
+    object-position: 50% 15%;
+  }
+
+  .section01 p{
+    font-size: 4vw;
+  }
+
+  .section01 img{
+    filter: saturate(1);
+  }
+
 }
