@@ -9,74 +9,101 @@
     text-decoration: none;
 }
 
-body{
-  background-color: black;
+BODY{
+  background-color: #000000;
   overflow: hidden;
 }
-
-/* SECTION 1 */
 
 .section01{
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
   min-height: 100vh;
-}
+  }
+  
+  .section01 A{
+    position: relative;
+    }
+    .section01 A:hover > IMG{
+      filter: saturate(1);
+    }
+    .section01 A:hover > P{
+      filter: opacity(0);
+    }
 
-.section01 a {
-  position: relative;
-}
+  .section01 IMG{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
-.section01 img{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+    transition-duration: 1s;
+    filter: saturate(0);
+    }
 
-.section01 p{
-  color: var(--color-primary);
-  font-size: 2vw;
-  text-shadow: 1px 1px #000000;
+  .section01 P{
+    color: var(--color-primary);
+    font-size: 2vw;
+    text-shadow: 1px 1px #000000;
 
-  position: relative;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition-duration: 1s;
+    }
 
-/* SECTION01 ANIMATIONS */
-
-.section01 img{
-  filter: saturate(0) blur(0px);
-  transition-duration: 1s;
-}
-
-.section01 a:hover > img{
-  filter: saturate(1) blur(5px);
-  scale: 105%;
-}
-
+    .img01{
+      clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+    }
+    .img02{
+      clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+    }
+    .img03{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+    }
+    
 
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10) { 
-  
-  /* SECTION 1 */
 
   .section01{
     grid-template-columns: repeat(1, 100%);
   }
   
-  .section01 img{
-    object-position: 50% 15%;
-  }
+    .section01 IMG{
+      object-position: 50% 15%;
+    }
+    
+    .section01 P{
+      font-size: 4vw;
+    }
 
-  .section01 p{
-    font-size: 4vw;
-  }
+    .img01{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    }
+    .img02{
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 95%);
+    }
+    .img03{
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    }
+}
 
-  .section01 img{
+/* MOBILE */
+
+@media (hover: none){
+  
+  .section01 IMG{
     filter: saturate(1);
   }
 
+  .section01 A:hover > IMG{
+    filter: none;
+  }
+
+  .section01 A:hover > P{
+    filter: none;
+  }
 }
