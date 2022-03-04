@@ -1,109 +1,135 @@
-:root{
+:root {
   --color-primary: #15c8ff;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins";
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hubballi', cursive;
+  text-decoration: none;
 }
 
-BODY{
+BODY {
   background-color: #000000;
   overflow: hidden;
 }
 
-.section01{
+/* SECTION01 */
+
+.section01 {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
   min-height: 100vh;
-  }
-  
-  .section01 A{
-    position: relative;
-    }
-    .section01 A:hover > IMG{
-      filter: saturate(1);
-    }
-    .section01 A:hover > P{
-      filter: opacity(0);
-    }
+}
 
-  .section01 IMG{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.section01 A {
+  position: relative;
+}
 
-    transition-duration: 1s;
-    filter: saturate(0);
-    }
+.section01 A:hover>IMG {
+  filter: saturate(1);
+}
 
-  .section01 P{
-    color: var(--color-primary);
-    font-size: 2vw;
-    text-shadow: 1px 1px #000000;
+.section01 A:hover>P {
+  filter: opacity(0);
+}
 
-    position: relative;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    transition-duration: 1s;
-    }
+.section01 IMG {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 
-    .img01{
-      clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
-    }
-    .img02{
-      clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
-    }
-    .img03{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
-    }
-    
+  transition-duration: 1s;
+  filter: saturate(0);
+}
+
+.section01 P {
+  color: var(--color-primary);
+  font-size: 2vw;
+  text-shadow: 1px 1px #000000;
+
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transition-duration: 1s;
+}
+
+.img01 {
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+}
+
+.img02 {
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+}
+
+.img03 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+}
+
+
+/* ANIMATIONS */
+
+.hover_desaturate{
+  animation-duration: 1s;
+}
+
+.hover_desaturate:hover{
+  filter: saturate(0);
+}
+
+.hover_opacity_0{
+  animation-duration: 1s;
+}
+
+.hover_opacity_0:hover{
+  filter: opacity(0);
+}
 
 /* PORTRAIT MODE */
-@media (max-aspect-ratio: 9/10) { 
+@media (max-aspect-ratio: 9/10) {
 
-  .section01{
+  .section01 {
     grid-template-columns: repeat(1, 100%);
   }
-  
-    .section01 IMG{
-      object-position: 50% 15%;
-    }
-    
-    .section01 P{
-      font-size: 4vw;
-    }
 
-    .img01{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-    }
-    .img02{
-      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 95%);
-    }
-    .img03{
-      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
-    }
+  .section01 IMG {
+    object-position: 50% 15%;
+  }
+
+  .section01 P {
+    font-size: 4vw;
+  }
+
+  .img01 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+
+  .img02 {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 95%);
+  }
+
+  .img03 {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  }
 }
 
 /* MOBILE */
 
-@media (hover: none){
-  
-  .section01 IMG{
+@media (hover: none) {
+
+  .section01 IMG {
     filter: saturate(1);
   }
 
-  .section01 A:hover > IMG{
+  .section01 A:hover>IMG {
     filter: none;
   }
 
-  .section01 A:hover > P{
+  .section01 A:hover>P {
     filter: none;
   }
 }
