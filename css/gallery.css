@@ -1,7 +1,6 @@
   .gallery {
     display: flexbox;
     text-align: center;
-    padding-bottom: 5em;
   }
 
   .pack {
@@ -12,27 +11,26 @@
     margin: 3em 3em;
   }
 
-  .pack p {
+  p {
     font-size: 1.25em;
   }
 
   .img {
     border-radius: .5em;
     object-fit: cover;
+
     max-height: 100%;
-    height: 30em;
     max-width: 100%;
+    height: 30em;
     width: 20em;
   }
 
   /* PORTRAIT MODE */
   @media (max-aspect-ratio: 9/10), (max-width: 600px) {
-    .gallery {
-      margin: 0 1em;
-    }
 
     .pack {
-      margin: 0 0;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   
     .img-holder {
