@@ -56,6 +56,11 @@ header {
     margin-bottom: 5vw;
   }
 
+  nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
   .imgHolder {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
