@@ -12,6 +12,7 @@
   }
   
   header {
+      padding-top: 3em;
       padding-bottom: 5em;
   }
   
@@ -19,9 +20,7 @@
     display: grid;
     justify-content: center;
     align-content: center;
-  
-    margin-top: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
   
   .header-logo {
@@ -54,6 +53,7 @@
 
     header {
       text-align: center;
+      padding-bottom: 1em;
     }
   
     nav {
