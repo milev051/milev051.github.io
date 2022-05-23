@@ -24,3 +24,22 @@
     max-width: 100%;
     width: 20em;
   }
+
+  /* PORTRAIT MODE */
+  @media (max-aspect-ratio: 9/10), (max-width: 600px) {
+    .gallery {
+      margin: 0 1em;
+    }
+
+    .pack {
+      margin: 0 0;
+    }
+  
+    .img-holder {
+      margin: 1em 0;
+    }
+  
+    .img {
+      height: 25em;
+    }
+  }
