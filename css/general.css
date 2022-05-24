@@ -12,10 +12,7 @@ a:hover {
 }
 
 html {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  padding-left: 5em;
-  padding-right: 5em;
+  margin: 3em 3em;
 }
 
 header {
@@ -55,13 +52,10 @@ nav {
 }
 
 /* PORTRAIT MODE */
-@media (max-aspect-ratio: 9/10), (max-width: 1030) {
+@media (max-aspect-ratio: 9/10), (max-width: 1030px) {
 
   html {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 0em;
-    padding-right: 0em;
+    margin: 2em 0;
   }
 
   header {
