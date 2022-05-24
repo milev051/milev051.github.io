@@ -3,7 +3,6 @@ header {
 }
 
 .gallery {
-  display: flexbox;
   text-align: center;
 }
 
@@ -33,7 +32,7 @@ header {
   }
 }
 
-@media (max-height: 850px) {
+@media (max-height: 900px) {
   .img {
     height: 25em;
   }

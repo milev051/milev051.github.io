@@ -1,10 +1,9 @@
 * {
   margin: 0;
-  margin: 0;
+  padding: 0;
   font-family: 'Poppins';
   font-weight: 300;
   text-decoration: none;
-  scrollbar-gutter: stable both-edges;
 }
 
 a:hover {
@@ -12,7 +11,7 @@ a:hover {
 }
 
 html {
-  margin: 3em 3em;
+  padding: 3em;
 }
 
 header {
@@ -55,7 +54,7 @@ nav {
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
 
   html {
-    margin: 2em 0;
+    padding: 2em 0;
   }
 
   header {
