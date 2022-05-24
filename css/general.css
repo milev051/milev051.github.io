@@ -7,15 +7,15 @@
   scrollbar-gutter: stable both-edges;
 }
 
+a:hover {
+  opacity: 90%;
+}
+
 html {
   margin-top: 3em;
   margin-bottom: 3em;
   margin-left: 5em;
   margin-right: 5em;
-}
-
-a:hover {
-  opacity: 90%;
 }
 
 header {
