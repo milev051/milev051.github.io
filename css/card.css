@@ -1,0 +1,78 @@
+header {
+    margin-bottom: 5em;
+}
+
+.imgBox {
+    margin-bottom: 5em;
+}
+
+.textBox {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.textSection {
+    margin-bottom: 5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.title {
+    margin-bottom: 1em;
+}
+
+.img-card {
+    border-radius: .5em;
+    object-fit: cover;
+
+    max-height: 100%;
+    max-width: 100%;
+    width: 40em;
+
+    border-style: solid;
+    border-width: .15em;
+    border-color: black;
+}
+
+.img-card:hover {
+    content: url("/img/Card/black card.png");
+}
+
+/* PORTRAIT MODE */
+@media (max-aspect-ratio: 9/10), (max-width: 1030px) {
+
+    header {
+        margin-bottom: 1em;
+    }
+    
+    .imgBox {
+        margin-bottom: 1em;
+    }
+    
+    .textSection {
+        margin-bottom: 3em;
+    }
+
+    .title {
+        margin-bottom: .5em;
+    }
+
+    .img-card {
+        width: 20em;
+    }
+
+    .imgBox {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .img {
+        height: 25em;
+    }
+}
