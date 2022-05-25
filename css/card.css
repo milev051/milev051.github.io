@@ -58,7 +58,8 @@ p {
     }
 
     .img-card {
-        height: 12em;
+        max-height: 10em;
+        width: auto;
     }
 
     .imgBox {
