@@ -31,7 +31,6 @@ p {
     border-width: .15em;
     border-radius: 2em;
     border-color: black;
-    content: url("/img/Card/black card.png");
 }
 
 .img-card:hover {
