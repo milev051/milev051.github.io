@@ -31,7 +31,7 @@ p {
     border-width: .15em;
     border-radius: 2em;
     border-color: black;
-    content: url("/img/Card/white card.png");
+    content: url("/img/Card/black card.png");
 }
 
 .img-card:hover {
@@ -45,11 +45,11 @@ p {
     header {
         margin-bottom: 1em;
     }
-    
+
     .imgBox {
         margin-bottom: 1em;
     }
-    
+
     .textSection {
         margin-bottom: 3em;
     }
