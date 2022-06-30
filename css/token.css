@@ -35,7 +35,7 @@ p {
 
 .img-card:hover {
     border-color: white;
-    content: url("/img/Card/black card.png");
+    content: url("/img/card/black card.png");
 }
 
 /* PORTRAIT MODE */
