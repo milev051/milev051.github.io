@@ -159,7 +159,7 @@
                 thumbnailImage: "20200528_133842 edit.jpg  \"style=\"object-position: 65%;",
                 images: [
                     "20200528_133842 edit.jpg  \"style=\"object-position: 65%;",
-                    "20200528_142959 edit.jpg",
+                    "20200528_142959 edit.jpg \"style=\"object-position: 85%;",
                 ],
             },
         ]
@@ -169,11 +169,16 @@
             document.getElementById("container").insertAdjacentHTML(
                 "beforeend",
                 "<section class=\"pack\">\
-                        <a href=\"javascript:loadImages(" + i + ");\">\
+                        <a href=\"javascript:loadCollection(" + i + ");\">\
                             <img class=\"img\" src=\" img/" + element.name + "/compressed/" + element.thumbnailImage + " \">\
                         </a>\
                 </section>"
             )
+        }
+
+        var loadCollection = function (number) {
+            window.scrollTo(0, 0);
+            loadImages(number)
         }
 
         var loadImages = function (number) {
@@ -181,21 +186,30 @@
             unfreeze()
             // load all pictures about certain person
             element = files[number]
-            element.images.forEach(imageName => {
+
+            for (j = 0; j < 100; j++) {
+                if (element.images[j] == null)
+                    break;
+                imageName = element.images[j]
                 document.getElementById("container").insertAdjacentHTML(
                     "beforeend",
                     "<section class=\"pack\">\
-                        <a href=\"javascript:imagePreview(" + number + ",\'" + imageName + "\')\">\
+                        <a href=\"javascript:imagePreview(" + number + ",\'" + j + "\')\">\
                             <img class=\"img\" src=\" img/" + element.name + "/compressed/" + imageName + " \">\
                         </a>\
                     </section>"
                 )
-            })
+            }
         }
 
-        var imagePreview = function (number, imageName) {
-            element = files[number]
+        var imagePreview = function (number, imageNumber) {
             freeze()
+            element = files[number]
+            imageName = element.images[imageNumber]
+
+            if (imageName.includes("style"))
+                imageName = imageName.split("style")[0]
+
             document.getElementById("container").insertAdjacentHTML(
                 "afterbegin",
                 "<a href=\"javascript:loadImages(" + number + ")\" class=\"clickableArea\" </a>\
