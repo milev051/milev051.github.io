@@ -210,10 +210,12 @@
 
         var freeze = function () {
             document.getElementsByTagName("html")[0].style.overflow = "hidden"
+            document.getElementsByTagName("body")[0].style.overflow = "hidden"
         }
 
         var unfreeze = function () {
             document.getElementsByTagName("html")[0].style.overflow = "visible"
+            document.getElementsByTagName("body")[0].style.overflow = "visible"
         }
 
     </script>
