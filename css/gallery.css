@@ -1,75 +1,94 @@
+.pack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30em;
+  margin: 3em 3em;
+}
 
+p {
+  font-size: 1.25em;
+}
 
-  .pack {
-    display: inline-block;
-    vertical-align: middle;
-    height: 30em;
-    margin: 3em 3em;
+.img {
+  border-radius: .5em;
+  object-fit: cover;
+
+  max-height: 100%;
+  max-width: 100%;
+  height: 30em;
+  width: 20em;
+}
+
+#imagePreview {
+  z-index: 3;
+  margin: 0;
+  position: fixed;
+  max-width: 95%;
+  max-height: 95%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 1em;
+}
+
+#diffuse {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 75%);
+  z-index: 1;
+}
+
+.clickableAreaLeft {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 25%;
+  height: 100%;
+  z-index: 15;
+}
+
+.clickableAreaRight {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 25%;
+  height: 100%;
+  z-index: 15;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
 
-  p {
-    font-size: 1.25em;
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+  }
+}
+
+/* PORTRAIT MODE */
+@media (max-aspect-ratio: 9/10), (max-width: 1030px) {
+
+  .pack {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .img-holder {
+    margin: 1em 0;
   }
 
   .img {
-    border-radius: .5em;
-    object-fit: cover;
-
-    max-height: 100%;
-    max-width: 100%;
-    height: 30em;
-    width: 20em;
+    height: 25em;
   }
-
-  .imagePreview {
-    z-index: 3;
-    margin: 0;
-    position: fixed;
-    max-width: 95%;
-    max-height: 95%;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  .backgroundBlur {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 75%;
-  }
-
-  .clickableArea {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-  }
-
-  .clickableArea:hover {
-    opacity: 100%;
-    cursor: default;
-  }
-
-  /* PORTRAIT MODE */
-  @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
-
-    .pack {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .img-holder {
-      margin: 1em 0;
-    }
-
-    .img {
-      height: 25em;
-    }
-  }
+}
