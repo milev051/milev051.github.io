@@ -18,8 +18,7 @@
 <body>
 
     <header>
-        <a class="header-logo-holder" href="/"><img src="img\logo\logo black.png" alt=""
-                class="header-logo"></a>
+        <a class="header-logo-holder" href="/"><img src="img\logo\logo black.png" alt="" class="header-logo"></a>
         <nav>
             <a class="header-text" href="/gallery">gallery</a>
             <a class="header-text" href="">instagram</a>
@@ -27,44 +26,156 @@
         </nav>
     </header>
 
-    <section class="container">
-
-        <section class="pack">
-            <a href="@marijana-stojanovic"><img src="img\@marijana-stojanovic\compressed\20200816_175024 edit.jpg" alt="" class="img"></a>
-            <!-- <p>@marijana</p> -->
-        </section>
-        <section class="pack">
-            <a href="@aleksandra-stojanovic"><img src="img\@aleksandra-stojanovic\compressed\MLV_0118.jpg" alt="" class="img"></a>
-            <!-- <p>@person</p> -->
-        </section>
-        <section class="pack">
-            <a href="@emilija-nikolic"><img src="img\@emilija-nikolic\compressed\MLV_0174 edit_2.jpg" alt="" class="img"></a>
-            <!-- <p>@person</p> -->
-        </section>
-        <section class="pack">
-            <a href="@sanja-milev"><img src="img\@sanja-milev\compressed\20200805_171742 edit.jpg" alt="" class="img"></a>
-            <!-- <p>@person</p> -->
-        </section>
-        <section class="pack">
-            <a href="@ivan-dodov"><img src="img\@ivan-dodov\compressed\20200812_181734 edit.jpg" alt="" class="img"></a>
-            <!-- <p>@person</p> -->
-        </section>
-        <section class="pack">
-            <a href="@andjela-mladenovic"><img src="img\@andjela-mladenovic\compressed\173 edit_1.jpg" alt="" class="img"></a>
-            <!-- <p>@person</p> -->
-        </section>
-        <section class="pack">
-            <a href="@vlada-stojanovic"><img style="object-position: 65%;" src="img\@vlada-stojanovic\compressed\20200528_133842 edit.jpg" alt=""
-                    class="img"></a>
-            <!-- <p>@person</p> -->
-        </section>
-        <section class="pack">
-            <a href="@natasa-djordjevic"><img style="object-position: 35%;" src="img\@natasa-djordjevic\compressed\20200908_174653 edit.jpg" alt=""
-                    class="img"></a>
-            <!-- <p>@person</p> -->
-        </section>
-
+    <section id="container">
+        <!-- <section class="pack">
+                <a href="@marijana-stojanovic"><img src="img\@marijana-stojanovic\compressed\20200816_175024 edit.jpg"
+                        alt="" class="img"></a>
+            </section>
+            <section class="pack">
+                <a href="@aleksandra-stojanovic"><img src="img\@aleksandra-stojanovic\compressed\MLV_0118.jpg" alt=""
+                        class="img"></a>
+            </section>
+            <section class="pack">
+                <a href="@emilija-nikolic"><img src="img\@emilija-nikolic\compressed\MLV_0174 edit_2.jpg" alt=""
+                        class="img"></a>
+            </section>
+            <section class="pack">
+                <a href="@sanja-milev"><img src="img\@sanja-milev\compressed\20200805_171742 edit.jpg" alt=""
+                        class="img"></a>
+            </section>
+            <section class="pack">
+                <a href="@ivan-dodov"><img src="img\@ivan-dodov\compressed\20200812_181734 edit.jpg" alt=""
+                        class="img"></a>
+            </section>
+            <section class="pack">
+                <a href="@andjela-mladenovic"><img src="img\@andjela-mladenovic\compressed\173 edit_1.jpg" alt=""
+                        class="img"></a>
+            </section>
+            <section class="pack">
+                <a href="@vlada-stojanovic"><img style="object-position: 65%;"
+                        src="img\@vlada-stojanovic\compressed\20200528_133842 edit.jpg" alt="" class="img"></a>
+            </section>
+            <section class="pack">
+                <a href="@natasa-djordjevic"><img style="object-position: 35%;"
+                        src="img\@natasa-djordjevic\compressed\20200908_174653 edit.jpg" alt="" class="img"></a>
+            </section> -->
     </section>
+
+    <script type="text/javascript">
+        const $container = ("container")
+
+        var person = {
+            name: String,
+            thumbnailImage: String,
+            images: String[100],
+        }
+
+        var files = [
+            marijana_stojanovic = {
+                name: "@marijana-stojanovic",
+                thumbnailImage: "20200816_175024 edit.jpg",
+                images: [
+                    "20200816_171726 edit.jpg",
+                    "20200816_175024 edit.jpg",
+                ]
+            },
+
+            aleksandra_stojanovic = {
+                name: "@aleksandra-stojanovic",
+                thumbnailImage: "MLV_0118.jpg",
+                images: [
+                    "20200820_152908 edit_2.jpg",
+                    "MLV_0118.jpg",
+                    "MLV_0177_edit03.jpg",
+                    "MLV_0185_edit01.jpg",
+                ],
+            },
+
+            emilija_nikolic = {
+                name: "@emilija-nikolic",
+                thumbnailImage: "MLV_0174 edit_2.jpg",
+                images: [
+                    "MLV_0174 edit_2.jpg",
+                    "MLV_0191 edit_1.jpg",
+                ],
+            },
+
+            ivan_dodov = {
+                name: "@ivan-dodov",
+                thumbnailImage: "20200812_181734 edit.jpg",
+                images: [
+                    "20200812_181734 edit.jpg",
+                ],
+            },
+
+            andjela_mladenovic = {
+                name: "@andjela-mladenovic",
+                thumbnailImage: "173 edit_1.jpg",
+                images: [
+                    "28 edit.jpg",
+                    "146 edit.jpg",
+                    "171 edit.jpg",
+                    "173 edit_1.jpg",
+                ],
+            },
+
+            natasa_djordjevic = {
+                name: "@natasa-djordjevic",
+                thumbnailImage: "20200908_174653 edit.jpg   \"style=\"object-position: 35%;",
+                images: [
+                    "20200908_171747 edit_1.jpg \"style=\"object-position: 60%;",
+                    "20200908_174653 edit.jpg  \"style=\"object-position: 35%;",
+                ],
+            },
+
+            sanja_milev = {
+                name: "@sanja-milev",
+                thumbnailImage: "20200805_171742 edit.jpg",
+                images: [
+                    "20200805_171742 edit.jpg",
+                ],
+            },
+
+            vlada_stojanovic = {
+                name: "@vlada-stojanovic",
+                thumbnailImage: "20200528_133842 edit.jpg  \"style=\"object-position: 65%;",
+                images: [
+                    "20200528_133842 edit.jpg  \"style=\"object-position: 65%;",
+                    "20200528_142959 edit.jpg",
+                ],
+            },
+        ]
+
+        for (i = 0; i < files.length; i++) {
+            element = files[i]
+            document.getElementById("container").insertAdjacentHTML(
+                "beforeend",
+                "<section class=\"pack\">\
+                        <a href=\"javascript:loadImages(" + i + ");\">\
+                            <img class=\"img\" src=\" img/" + element.name + "/compressed/" + element.thumbnailImage + " \" alt=\"\">\
+                        </a>\
+                </section>"
+            );
+        }
+
+        var loadImages = function (number) {
+            // clear html
+            document.getElementById("container").innerHTML = ""
+            // load all pictures about certain person
+            console.log(number)
+            var element = files[number]
+            element.images.forEach(image => {
+                document.getElementById("container").insertAdjacentHTML(
+                    "beforeend",
+                    "<section class=\"pack\">\
+                        <a>\
+                            <img class=\"img\" src=\" img/" + element.name + "/compressed/" + image + " \" alt=\"\">\
+                        </a>\
+                    </section>"
+                );
+            });
+        }
+    </script>
 
 </body>
 
