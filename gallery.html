@@ -176,12 +176,12 @@
             )
         }
 
-        var loadCollection = function (number) {
+        function loadCollection (number) {
             window.scrollTo(0, 0);
             loadImages(number)
         }
 
-        var loadImages = function (number) {
+        function loadImages (number) {
             clear()
             unfreeze()
             // load all pictures about certain person
@@ -202,7 +202,7 @@
             }
         }
 
-        var imagePreview = function (number, imageNumber) {
+        function imagePreview (number, imageNumber) {
             freeze()
             element = files[number]
             imageName = element.images[imageNumber]
@@ -218,7 +218,7 @@
             )
         }
 
-        var clear = function () {
+        function clear() {
             document.getElementById("container").innerHTML = ""
         }
 
