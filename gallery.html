@@ -170,30 +170,52 @@
                 "beforeend",
                 "<section class=\"pack\">\
                         <a href=\"javascript:loadImages(" + i + ");\">\
-                            <img class=\"img\" src=\" img/" + element.name + "/compressed/" + element.thumbnailImage + " \" alt=\"\">\
+                            <img class=\"img\" src=\" img/" + element.name + "/compressed/" + element.thumbnailImage + " \">\
                         </a>\
                 </section>"
-            );
+            )
         }
 
         var loadImages = function (number) {
-            // clear html
-            document.getElementById("container").innerHTML = ""
+            clear()
+            unfreeze()
             // load all pictures about certain person
-            console.log(number)
-            var element = files[number]
-            element.images.forEach(image => {
+            element = files[number]
+            element.images.forEach(imageName => {
                 document.getElementById("container").insertAdjacentHTML(
                     "beforeend",
                     "<section class=\"pack\">\
-                        <a>\
-                            <img class=\"img\" src=\" img/" + element.name + "/compressed/" + image + " \" alt=\"\">\
+                        <a href=\"javascript:imagePreview(" + number + ",\'" + imageName + "\')\">\
+                            <img class=\"img\" src=\" img/" + element.name + "/compressed/" + imageName + " \">\
                         </a>\
                     </section>"
-                );
-            });
+                )
+            })
         }
 
+        var imagePreview = function (number, imageName) {
+            element = files[number]
+            freeze()
+            document.getElementById("container").insertAdjacentHTML(
+                "afterbegin",
+                "<a href=\"javascript:loadImages(" + number + ")\" class=\"clickableArea\" </a>\
+                <img class=\"imagePreview\" src=\"img/" + element.name + "/original/" + imageName + "\">\
+                <div class=\"backgroundBlur\"></div>"
+            )
+        }
+
+        var clear = function() {
+            document.getElementById("container").innerHTML = ""
+        }
+        
+        var freeze = function() {
+            document.getElementsByTagName("body")[0].style.overflow = "hidden"
+        }
+        
+        var unfreeze = function() {
+            document.getElementsByTagName("body")[0].style.overflow = "visible"
+        }
+        
     </script>
 
 </body>

@@ -17,6 +17,7 @@ a:hover {
 
 html {
   padding: 5em;
+  overflow-y: scroll;
 }
 
 #container {
@@ -67,6 +68,7 @@ nav {
   html {
     padding: 2em 0;
     padding-bottom: 1em;
+    overflow-y: auto;
   }
 
   .title {
