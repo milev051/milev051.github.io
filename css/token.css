@@ -1,29 +1,4 @@
-header {
-    margin-bottom: 5em;
-}
-
-.imgBox {
-    margin-bottom: 5em;
-}
-
-.textBox {
-    padding-left: 3em;
-    padding-right: 3em;
-}
-
-.textSection {
-    margin-bottom: 5em;
-}
-
-p {
-    font-size: 1.5em;
-}
-
-.title {
-    margin-bottom: 1em;
-}
-
-.img-card {
+.cardImg {
     object-fit: cover;
     height: 25em;
 
@@ -31,9 +6,11 @@ p {
     border-width: .15em;
     border-radius: 2em;
     border-color: black;
+
+    margin-bottom: 5em;
 }
 
-.img-card:hover {
+.cardImg:hover {
     border-color: white;
     content: url("/img/card/black card.png");
 }
@@ -41,37 +18,14 @@ p {
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
 
-    header {
-        margin-bottom: 1em;
-    }
-
-    .imgBox {
-        margin-bottom: 1em;
-    }
-
-    .textSection {
-        margin-bottom: 3em;
-    }
-
-    .title {
-        margin-bottom: .5em;
-    }
-
-    .img-card {
-        max-height: 10em;
+    .cardImg {
+        height: 10em;
         width: auto;
-    }
 
-    .imgBox {
-        margin-top: 3em;
+        border-width: .1em;
+        border-radius: 1em;
+
+        margin-top: 1em;
         margin-bottom: 3em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .img {
-        height: 25em;
     }
 }

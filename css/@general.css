@@ -8,23 +8,12 @@
 
 html {
   overflow-y: overlay;
+  padding: 4em 5em;
+  padding-bottom: 0;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  opacity: 85%;
-}
-
-html {
-  padding: 5em;
-}
-
-#container {
-  margin-top: 3em;
+header {
+  margin-bottom: 5em;
 }
 
 .header-logo-holder {
@@ -47,41 +36,36 @@ nav {
   grid-auto-flow: column;
 }
 
-.header-text {
+.nav-element {
   font-size: 2em;
   color: black;
 }
 
-.title {
-  text-align: center;
-  font-weight: 400;
-  font-size: 2em;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.specific-title {
-  text-align: center;
-  font-weight: 400;
-  font-size: 2em;
-  margin-top: 1em;
+a:hover {
+  opacity: 85%;
+}
+
+.boxWithMargin {
+  margin-bottom: 5em;
 }
 
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
 
   html {
-    padding: 2em 0;
+    padding-top: 2em;
     padding-bottom: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
   }
 
-  .title {
-    font-size: 1.25em;
-  }
-
-  .specific-title {
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.5em;
-    margin-top: 2em;
+  header {
+    margin-bottom: 3em;
   }
 
   .header-logo-holder {
@@ -91,5 +75,13 @@ nav {
   nav {
     grid-auto-flow: row;
     gap: 0;
+  }
+
+  .nav-element {
+    font-size: 1.5em;
+  }
+
+  .boxWithMargin {
+    margin-bottom: 2em;
   }
 }

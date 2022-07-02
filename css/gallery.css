@@ -2,11 +2,9 @@
   display: inline-block;
   vertical-align: middle;
   height: 30em;
-  margin: 3em 3em;
-}
-
-p {
-  font-size: 1.25em;
+  margin-bottom: 7em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .img {
@@ -80,7 +78,6 @@ p {
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
 
   .pack {
-    margin-top: 0;
     margin-bottom: 0;
   }
 

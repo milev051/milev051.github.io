@@ -1,0 +1,56 @@
+p {
+    font-size: 1.5em;
+}
+
+.title {
+    text-align: center;
+    font-weight: 400;
+
+    font-size: 2em;
+    margin-bottom: .1em;
+}
+
+.textSection {
+    margin-top: 0;
+    margin-bottom: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.textLine {
+    margin-bottom: 2em;
+}
+
+.textSmallLine {
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+golden {
+    color: #E7C000;
+  }
+
+/* PORTRAIT MODE */
+@media (max-aspect-ratio: 9/10), (max-width: 1030px) {
+
+    p {
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .textSection {
+        margin-bottom: 3em;
+    }
+
+    .textLine {
+        margin-bottom: 1em;
+    }
+
+    .textSmallLine {
+        font-size: 0.5em;
+        margin-bottom: 1em;
+    }
+}
