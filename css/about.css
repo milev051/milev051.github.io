@@ -1,49 +1,26 @@
-/* .b {
-    border-style: solid;
-    border-color: black;
-}
-
-.r {
-    border-style: solid;
-    border-color: red;
-}
-
-.g {
-    border-style: solid;
-    border-color: green;
-}
-
-b {
-    border-style: solid;
-    border-color: blue;
-} */
-
-.textWithPicture {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    margin-bottom: 3em;
-}
-
 .cvImg {
     width: 30em;
 
     border-style: solid;
     border-radius: 1em;
     border-width: 0.15em;
+}
 
-    margin-bottom: 1em;
+horizontalSection {
+    padding: 3em;
 }
 
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
-.cvImg {
-    width: 15em;
 
-    border-style: solid;
-    border-radius: .5em;
-    border-width: 0.1em;
+    .cvImg {
+        width: 15em;
 
-    margin-bottom: 1em;
-}
+        border-radius: .5em;
+        border-width: 0.1em;
+    }
+
+    horizontalSection {
+        padding: 2em;
+    }
 }

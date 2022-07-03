@@ -104,14 +104,14 @@ showCollectionsThumbnail()
 function showCollectionsThumbnail() {
     for (i = 0; i < collections.length; i++) {
         collection = collections[i]
-        document.getElementById("container").insertAdjacentHTML(
+        document.getElementById("gallery").insertAdjacentHTML(
             "beforeend",
             "\
-            <section class='pack'>\
+            <div>\
                 <a href='javascript:showCollectionImages(" + i + ");'>\
-                    <img class='img' src=' img/" + collection.name + "/compressed/" + collection.thumbnailImage + " '>\
+                    <img class='galleryImg' src=' img/" + collection.name + "/compressed/" + collection.thumbnailImage + " '>\
                 </a>\
-            </section>\
+            </div>\
             "
         )
     }
@@ -126,14 +126,14 @@ function showCollectionImages(collectionId) {
         if (collection.images[i] == null)
             break
 
-        document.getElementById("container").insertAdjacentHTML(
+        document.getElementById("gallery").insertAdjacentHTML(
             "beforeend",
             "\
-            <section class='pack'>\
+            <div>\
                 <a href='javascript:openFullScreen(" + collectionId + "," + i + ")'>\
-                    <img class='img' src='img/" + collection.name + "/compressed/" + collection.images[i] + "'>\
+                    <img class='galleryImg' src='img/" + collection.name + "/compressed/" + collection.images[i] + "'>\
                 </a>\
-            </section>\
+            </div>\
             "
         )
     }
@@ -149,7 +149,7 @@ function openFullScreen(collectionId, imageId) {
     if (collectionImage.includes("style"))
         collectionImage = collectionImage.split("style")[0]
 
-    document.getElementById("container").insertAdjacentHTML(
+    document.body.insertAdjacentHTML(
         "afterbegin",
         "\
         <div id='preview'>\
@@ -184,7 +184,7 @@ function undiffuse() {
 }
 
 function clear() {
-    document.getElementById("container").innerHTML = ""
+    document.getElementById("gallery").innerHTML = ""
 }
 
 function scrollToTop() {

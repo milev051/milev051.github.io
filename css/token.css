@@ -1,13 +1,12 @@
 .cardImg {
     object-fit: cover;
-    height: 25em;
+    align-self: center;
+    height: 30vh;
 
     border-style: solid;
     border-width: .15em;
     border-radius: 2em;
     border-color: black;
-
-    margin-bottom: 5em;
 }
 
 .cardImg:hover {
@@ -20,12 +19,8 @@
 
     .cardImg {
         height: 10em;
-        width: auto;
 
         border-width: .1em;
         border-radius: 1em;
-
-        margin-top: 1em;
-        margin-bottom: 3em;
     }
 }

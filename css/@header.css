@@ -1,0 +1,56 @@
+header {
+    margin-bottom: 5em;
+}
+
+.header-logo-holder {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2em;
+}
+
+.header-logo {
+    max-width: 4em;
+}
+
+nav {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    gap: 5em;
+    grid-auto-flow: column;
+}
+
+.nav-element {
+    font-size: 2em;
+    color: black;
+}
+
+/* PORTRAIT MODE */
+@media (max-aspect-ratio: 9/10), (max-width: 1030px) {
+
+    html {
+        padding-top: 2em;
+        padding-bottom: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    header {
+        margin-bottom: 3em;
+    }
+
+    .header-logo-holder {
+        margin-bottom: 1em;
+    }
+
+    nav {
+        grid-auto-flow: row;
+        gap: 0;
+    }
+
+    .nav-element {
+        font-size: 1.5em;
+    }
+}

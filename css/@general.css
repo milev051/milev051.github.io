@@ -8,80 +8,65 @@
 
 html {
   overflow-y: overlay;
-  padding: 4em 5em;
-  padding-bottom: 0;
+  margin: 3em;
 }
 
-header {
-  margin-bottom: 5em;
+verticalSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 5em;
 }
 
-.header-logo-holder {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 2em;
+horizontalSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 5em;
 }
 
-.header-logo {
-  max-width: 4em;
+horizontalSection section {
+  padding: 0 2em;
 }
 
-nav {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-
-  gap: 5em;
-  grid-auto-flow: column;
+.border {
+  border-style: solid;
+  border-radius: .5em;
 }
 
-.nav-element {
-  font-size: 2em;
-  color: black;
+.breath {
+  padding: 3em;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  opacity: 85%;
-}
-
-.boxWithMargin {
-  margin-bottom: 5em;
+.smallGap {
+  row-gap: 1em;
 }
 
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
-
   html {
-    padding-top: 2em;
-    padding-bottom: 1em;
-    padding-left: 0em;
-    padding-right: 0em;
+    margin: 2em;
   }
 
-  header {
-    margin-bottom: 3em;
+  horizontalSection {
+    row-gap: 3em;
   }
 
-  .header-logo-holder {
-    margin-bottom: 1em;
+  verticalSection {
+    row-gap: 3em;
   }
 
-  nav {
-    grid-auto-flow: row;
-    gap: 0;
+  .border {
+    border-style: solid;
+    border-radius: .25em;
   }
 
-  .nav-element {
-    font-size: 1.5em;
+  .breath {
+    padding: 2em;
   }
 
-  .boxWithMargin {
-    margin-bottom: 2em;
+  .smallGap {
+    row-gap: 2em;
   }
 }
