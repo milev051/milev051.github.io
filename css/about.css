@@ -8,6 +8,33 @@
 
 horizontalSection {
     padding: 3em;
+    
+}
+
+#element p {
+    font-size: 1em;
+    min-width: 10em;
+}
+
+.stars {
+    padding-bottom: .3em;
+}
+
+.starImg {
+    height: 1em;
+}
+
+.programImg {
+    height: 4em;
+    border-radius: .5em;
+}
+
+hr {
+    width: 50vh;
+    display: inline-flex;
+    border-width: .01em;
+    border-style: solid;
+    background-color: black;
 }
 
 /* PORTRAIT MODE */
