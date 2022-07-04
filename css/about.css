@@ -14,6 +14,10 @@ horizontalSection {
     padding: 3em;
 }
 
+horizontalSection  section{
+    padding: 0 1em;
+}
+
 .titleAndText {
     display: flex;
     flex-wrap: wrap;
@@ -52,11 +56,7 @@ horizontalSection {
     }
 
     #element p {
-        font-size: 1em;
-    }
-
-    .stars {
-        padding-bottom: .3em;
+        font-size: .2em;
     }
 
     .starImg {
