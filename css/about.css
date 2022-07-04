@@ -28,7 +28,7 @@ horizontalSection section {
 #element {
     display: flex;
     flex-direction: column;
-    max-width: 5em;
+    width: 6em;
 }
 
 .starImg {
