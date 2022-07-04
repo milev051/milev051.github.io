@@ -6,7 +6,7 @@ document.body.insertAdjacentHTML(
         <nav>\
             <a class='nav-element' href='gallery'>gallery</a>\
             <a class='nav-element' href='https://www.instagram.com/milev.rs/'>instagram</a>\
-            <a class='nav-element' href='aboutt'>aboutt</a>\
+            <a class='nav-element' href='aboutt'>about</a>\
         </nav>\
     </header>\
   "
