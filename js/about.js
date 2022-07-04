@@ -281,10 +281,13 @@ sections.forEach(section => {
         "beforeend",
         "\
         <section class='titleAndText'>\
+        \
             <p class='verticalSectionTitle'>"+ section.name + "</p>\
-            <horizontalSection class='border breath' id='section'>\
+            \
+            <horizontalSection class='fitContent border breath' id='section'>\
             " + returnAllProgramsFrom(section) + "\
             </horizontalSection>\
+            \
         </section>\
         "
     )
@@ -302,11 +305,15 @@ function returnAllProgramsFrom(section) {
         programsToString = programsToString +
             "\
             <section id='element'>\
+            \
                 <section id='stars'>\
                     " + returnStarsToStringFrom(program.level) + "\
                 </section >\
+                \
                 <a href='"+ program.link + "'><img class='programImg' src='img/programs icons/" + program.name + "'></a>\
-                <p>"+ program.name.split(".")[0] + "</p>\
+                \
+                <p class='programTitle'>"+ program.name.split(".")[0] + "</p>\
+            \
             </section >\
             "
     });

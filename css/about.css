@@ -12,9 +12,10 @@ html {
 
 horizontalSection {
     padding: 3em;
+    align-items: flex-start;
 }
 
-horizontalSection  section{
+horizontalSection section {
     padding: 0 1em;
 }
 
@@ -24,21 +25,24 @@ horizontalSection  section{
     flex-direction: column;
 }
 
-#element p {
-    font-size: .8em;
-}
-
-.stars {
-    padding-bottom: .3em;
+#element {
+    display: flex;
+    flex-direction: column;
+    max-width: 5em;
 }
 
 .starImg {
     height: .8em;
+    padding-bottom: .3em;
 }
 
 .programImg {
     height: 3em;
     border-radius: .5em;
+}
+
+.programTitle {
+    font-size: .8em;
 }
 
 /* PORTRAIT MODE */
@@ -49,7 +53,7 @@ horizontalSection  section{
     }
 
     horizontalSection {
-      row-gap: 2em;
+        row-gap: 2em;
     }
 
     .cvImg {
@@ -59,10 +63,6 @@ horizontalSection  section{
         border-width: 0.1em;
     }
 
-    #element p {
-        font-size: .2em;
-    }
-
     .starImg {
         height: .5em;
     }
@@ -70,5 +70,9 @@ horizontalSection  section{
     .programImg {
         height: 2em;
         border-radius: .25em;
+    }
+
+    .programTitle {
+        font-size: .8em;
     }
 }
