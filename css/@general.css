@@ -30,6 +30,18 @@ horizontalSection section {
   padding: 0 2em;
 }
 
+hr {
+  width: 25%;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  display: inline-flex;
+
+  border-width: 0.01em;
+  border-color: black;
+  background-color: black;
+  border-style: solid;
+}
+
 .border {
   border-style: solid;
   border-radius: .5em;

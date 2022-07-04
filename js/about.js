@@ -33,12 +33,6 @@ sections = [
             },
 
             {
-                name: "Unity.jpg",
-                level: 4,
-                link: "https://unity.com/",
-            },
-
-            {
                 name: "Eclipse.png",
                 level: 3,
                 link: "https://www.eclipse.org/downloads/",
@@ -144,11 +138,11 @@ sections = [
                 link: "https://en.wikipedia.org/wiki/C%2B%2B",
             },
 
-            {
-                name: "C#.svg",
-                level: 3,
-                link: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
-            },
+            // {
+            //     name: "C#.png",
+            //     level: 3,
+            //     link: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+            // },
 
             {
                 name: "Java.jpg",
@@ -251,6 +245,12 @@ sections = [
             },
 
             {
+                name: "Unity.jpg",
+                level: 4,
+                link: "https://unity.com/",
+            },
+
+            {
                 name: "Unreal Engine.jpg",
                 level: 3,
                 link: "https://www.unrealengine.com/en-US",
@@ -280,11 +280,9 @@ sections.forEach(section => {
     document.getElementById("programSkills").insertAdjacentHTML(
         "beforeend",
         "\
-        <section>\
-            <p class='title'>"+ section.name + "</p>\
-            <br>\
-            <hr>\
-            <horizontalSection id='section'>\
+        <section class='titleAndText'>\
+            <p class='verticalSectionTitle'>"+ section.name + "</p>\
+            <horizontalSection class='border breath' id='section'>\
             " + returnAllProgramsFrom(section) + "\
             </horizontalSection>\
         </section>\

@@ -1,3 +1,7 @@
+html {
+    margin: 3em 9em;
+}
+
 .cvImg {
     width: 30em;
 
@@ -8,12 +12,16 @@
 
 horizontalSection {
     padding: 3em;
-    
+}
+
+.titleAndText {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #element p {
-    font-size: 1em;
-    min-width: 10em;
+    font-size: .8em;
 }
 
 .stars {
@@ -21,24 +29,20 @@ horizontalSection {
 }
 
 .starImg {
-    height: 1em;
+    height: .8em;
 }
 
 .programImg {
-    height: 4em;
+    height: 3em;
     border-radius: .5em;
-}
-
-hr {
-    width: 50vh;
-    display: inline-flex;
-    border-width: .01em;
-    border-style: solid;
-    background-color: black;
 }
 
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
+
+    html {
+        margin: 2em 2em;
+    }
 
     .cvImg {
         width: 15em;
@@ -47,7 +51,20 @@ hr {
         border-width: 0.1em;
     }
 
-    horizontalSection {
-        padding: 2em;
+    #element p {
+        font-size: 1em;
+    }
+
+    .stars {
+        padding-bottom: .3em;
+    }
+
+    .starImg {
+        height: .5em;
+    }
+
+    .programImg {
+        height: 2em;
+        border-radius: .25em;
     }
 }

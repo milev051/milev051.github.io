@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: #ddd000;
+    color: #00a9c7;
 }
 
 a:hover {
@@ -13,30 +13,12 @@ p {
 
 .title {
     font-weight: 400;
-
     font-size: 2em;
-    margin-bottom: .1em;
-}
-
-.textSection {
-    margin-top: 0;
-    margin-bottom: 5em;
-    margin-left: 3em;
-    margin-right: 3em;
-}
-
-.textLine {
-    margin-bottom: 2em;
-}
-
-.textSmallLine {
-    font-size: 1em;
-    margin-bottom: 2em;
 }
 
 .verticalSectionTitle {
-    margin-bottom: -1em;
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-bottom: .8em;
 }
 
 .left p {
@@ -48,7 +30,7 @@ p {
 }
 
 g {
-    color: #ddd000;
+    color: #00a9c7;
 }
 
 /* PORTRAIT MODE */
@@ -62,21 +44,7 @@ g {
         font-size: 1.5em;
     }
 
-    .textSection {
-        margin-bottom: 3em;
-    }
-
-    .textLine {
-        margin-bottom: 1em;
-    }
-
-    .textSmallLine {
-        font-size: 0.5em;
-        margin-bottom: 1em;
-    }
-
     .verticalSectionTitle {
-        margin-bottom: -1em;
-        font-size: 2em;
+        font-size: 1.8em;
     }
 }
