@@ -48,6 +48,10 @@ horizontalSection  section{
         margin: 2em 2em;
     }
 
+    horizontalSection {
+      row-gap: 2em;
+    }
+
     .cvImg {
         width: 15em;
 
