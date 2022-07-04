@@ -304,7 +304,7 @@ function returnAllProgramsFrom(section) {
         // CREATE STRING THAT CONTAINS ALL PROGRAMS FROM SECTION
         programsToString = programsToString +
             "\
-            <section id='element'>\
+            <section id='program'>\
             \
                 <section id='stars'>\
                     " + returnStarsToStringFrom(program.level) + "\

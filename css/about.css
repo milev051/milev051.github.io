@@ -1,15 +1,3 @@
-html {
-    margin: 3em 9em;
-}
-
-.cvImg {
-    width: 30em;
-
-    border-style: solid;
-    border-radius: 1em;
-    border-width: 0.15em;
-}
-
 horizontalSection {
     padding: 3em;
     align-items: flex-start;
@@ -25,14 +13,14 @@ horizontalSection section {
     flex-direction: column;
 }
 
-#element {
+#program {
     display: flex;
     flex-direction: column;
-    width: 6em;
+    width: 5em;
 }
 
 .starImg {
-    height: .8em;
+    height: .6em;
     padding-bottom: .3em;
 }
 
@@ -48,19 +36,9 @@ horizontalSection section {
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
 
-    html {
-        margin: 2em 2em;
-    }
 
     horizontalSection {
         row-gap: 2em;
-    }
-
-    .cvImg {
-        width: 15em;
-
-        border-radius: .5em;
-        border-width: 0.1em;
     }
 
     .starImg {
