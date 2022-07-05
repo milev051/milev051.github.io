@@ -136,6 +136,7 @@ function showCollectionsThumbnails() {
 function showCollectionImages(collectionId) {
     clear()
     scrollToTop()
+
     collection = collections[collectionId]
 
     if (collection.username.length > 0)
@@ -172,9 +173,10 @@ function showCollectionImages(collectionId) {
 }
 
 function openFullScreen(collectionId, imageId) {
-    closeFullScreen()
     disableScroll()
+    closeFullScreen()
     diffuse()
+
     collection = collections[collectionId]
     collectionImage = collection.images[imageId]
 
@@ -193,11 +195,14 @@ function openFullScreen(collectionId, imageId) {
 }
 
 function closeFullScreen() {
-    undiffuse()
     enableScroll()
+    undiffuse()
+
     if (document.getElementById('preview') == null)
         return
+
     document.getElementById('preview').style.animation = 'fadeOut 0.2s'
+
     setTimeout(() => {
         document.getElementById("preview").remove()
     }, 150)
@@ -211,6 +216,7 @@ function diffuse() {
 function undiffuse() {
     if (document.getElementById("diffuse") == null)
         return
+        
     document.getElementById("diffuse").style.animation = 'fadeOut 0.2s'
     setTimeout(document.getElementById("diffuse").remove(), 190)
 }
