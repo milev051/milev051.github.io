@@ -224,7 +224,7 @@ function scrollToTop() {
 }
 
 function enableScroll() {
-    document.getElementById("html").style.overflowY = "overlay"
+    document.getElementById("html").style.overflowY = "scroll"
 }
 
 function disableScroll() {
