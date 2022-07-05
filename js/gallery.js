@@ -216,7 +216,7 @@ function diffuse() {
 function undiffuse() {
     if (document.getElementById("diffuse") == null)
         return
-        
+
     document.getElementById("diffuse").style.animation = 'fadeOut 0.2s'
     setTimeout(document.getElementById("diffuse").remove(), 190)
 }
@@ -230,7 +230,7 @@ function scrollToTop() {
 }
 
 function enableScroll() {
-    document.getElementById("html").style.overflow = "overlay"
+    document.getElementById("html").style.overflow = "visible"
 }
 
 function disableScroll() {

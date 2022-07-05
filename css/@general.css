@@ -7,7 +7,7 @@
 }
 
 html {
-  overflow-y: overlay;
+  overflow-y: visible;
   margin: 3em;
 }
 
