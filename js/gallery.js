@@ -140,7 +140,7 @@ function showCollectionImages(collectionId) {
 
     if (collection.username.length > 0)
         // ADD TITLE
-        document.getElementById("verticalSection").insertAdjacentHTML(
+        document.getElementById("container").insertAdjacentHTML(
             "afterbegin",
             "\
         <a href='https://www.instagram.com/"+ collection.username + "/'>\
