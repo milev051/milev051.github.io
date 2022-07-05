@@ -9,8 +9,8 @@
 
 .galleryTitle {
   color: black;
-  margin-top: -0.7em;
-  margin-bottom: -0.5em;
+  margin-top: -1em;
+  margin-bottom: 1em;
   font-size: 2.5em;
 }
 
@@ -58,9 +58,10 @@
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
 
   .galleryTitle {
-    margin-top: -0.5em;
-    margin-bottom: -0.5em;
-    font-size: 2.25em;
+    color: black;
+    margin-top: -.5em;
+    margin-bottom: 1em;
+    font-size: 2em;
   }
 
   .collectionUsername {
