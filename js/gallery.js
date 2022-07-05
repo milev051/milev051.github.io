@@ -1,11 +1,3 @@
-collection = {
-    name: String,
-    thumbnailImage: String,
-    images: String[100],
-    username: String,
-    collectionLink: String,
-}
-
 collections = [
     {
         name: "marijana stojanovic",
@@ -20,11 +12,11 @@ collections = [
     {
         name: "aleksandra stojanovic",
         username: '',
-        thumbnailImage: "MLV_0118.jpg",
+        thumbnailImage: "MLV_0118.jpg" + objectPosition(0, 20),
         images: [
             "20200820_152908 edit_2.jpg",
             "MLV_0118.jpg",
-            "MLV_0177_edit03.jpg",
+            "MLV_0177_edit03.jpg" + objectPosition(0, 20),
             "MLV_0185_edit01.jpg",
         ],
     },
@@ -42,12 +34,12 @@ collections = [
     kristina_ristic = {
         name: "kristina ristic",
         username: '',
-        thumbnailImage: "MLV_0046_1.jpg",
+        thumbnailImage: "MLV_0046_1.jpg" + objectPosition(0, 80),
         images: [
-            "MLV_0046_1.jpg",
+            "MLV_0046_1.jpg" + objectPosition(0, 80),
             "MLV_0062_1.jpg",
             "MLV_0154_1.jpg",
-            "MLV_0159_1.jpg",
+            "MLV_0159_1.jpg" + objectPosition(0, 20),
         ],
     },
 
@@ -84,10 +76,10 @@ collections = [
     natasa_djordjevic = {
         name: "natasa djordjevic",
         username: '',
-        thumbnailImage: "20200908_174653 edit.jpg   'style='object-position: 35%;",
+        thumbnailImage: "20200908_174653 edit.jpg" + objectPosition(35, 0),
         images: [
-            "20200908_171747 edit_1.jpg 'style='object-position: 60%;",
-            "20200908_174653 edit.jpg  'style='object-position: 35%;",
+            "20200908_171747 edit_1.jpg" + objectPosition(60, 0),
+            "20200908_174653 edit.jpg" + objectPosition(35, 0),
         ],
     },
 
@@ -103,10 +95,10 @@ collections = [
     {
         name: "vlada stojanovic",
         username: '',
-        thumbnailImage: "20200528_133842 edit.jpg  'style='object-position: 65%;",
+        thumbnailImage: "20200528_133842 edit.jpg" + objectPosition(65, 0),
         images: [
-            "20200528_133842 edit.jpg  'style='object-position: 65%;",
-            "20200528_142959 edit.jpg 'style='object-position: 85%;",
+            "20200528_133842 edit.jpg" + objectPosition(65, 0),
+            "20200528_142959 edit.jpg" + objectPosition(85, 0),
         ],
     },
 ]
@@ -230,7 +222,7 @@ function scrollToTop() {
 }
 
 function enableScroll() {
-    document.getElementById("html").style.overflow = "visible"
+    document.getElementById("html").style.overflow = "scroll"
 }
 
 function disableScroll() {
@@ -242,4 +234,8 @@ function returnAtSymbolFor(collectionUsername) {
         return '@'
     else
         return ''
+}
+
+function objectPosition(x, y) {
+    return "'style=object-position:" + x + "%" + y + "%;"
 }

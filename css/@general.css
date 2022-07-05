@@ -7,7 +7,7 @@
 }
 
 html {
-  overflow-y: visible;
+  overflow-y: scroll;
   margin: 3em;
 }
 

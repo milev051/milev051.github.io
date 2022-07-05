@@ -1,14 +1,3 @@
-program = {
-    name: String,
-    level: Number,
-    link: String,
-}
-
-section = {
-    name: String,
-    programs: program[100],
-}
-
 sections = [
 
     {
@@ -271,7 +260,6 @@ sections = [
     },
 
 ]
-
 
 // FOR EACH SECTION
 sections.forEach(section => {
