@@ -224,11 +224,11 @@ function scrollToTop() {
 }
 
 function enableScroll() {
-    document.getElementById("html").style.overflowY = "scroll"
+    document.getElementById("html").style.overflow = "overlay"
 }
 
 function disableScroll() {
-    document.getElementById("html").style.overflowY = "hidden"
+    document.getElementById("html").style.overflow = "hidden"
 }
 
 function returnAtSymbolFor(collectionUsername) {
