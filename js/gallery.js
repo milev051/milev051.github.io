@@ -137,10 +137,6 @@ function showCollectionImages(collectionId) {
     clear()
     scrollToTop()
     collection = collections[collectionId]
-    if (collection.username.length > 0)
-        atSymbol = '@'
-    else
-        atSymbol = ''
 
     if (collection.username.length > 0)
         // ADD TITLE

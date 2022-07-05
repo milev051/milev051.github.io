@@ -11,12 +11,3 @@ document.body.insertAdjacentHTML(
     </header>\
   "
 )
-
-document.body.insertAdjacentHTML(
-    "afterend",
-    "\
-    <p style='margin-top: 2em'>\
-    20220705_223102\
-    </p>\
-    "
-)
