@@ -20,7 +20,7 @@
   vertical-align: middle;
 
   height: 30em;
-  width: 20em;
+  max-width: 20em;
 }
 
 #imagePreview {
