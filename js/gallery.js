@@ -2,20 +2,24 @@ collection = {
     name: String,
     thumbnailImage: String,
     images: String[100],
+    username: String,
+    collectionLink: String,
 }
 
 collections = [
-    marijana_stojanovic = {
-        name: "@marijana_stojanovic",
+    {
+        name: "marijana stojanovic",
+        username: '',
         thumbnailImage: "20200816_175024 edit.jpg",
         images: [
             "20200816_171726 edit.jpg",
             "20200816_175024 edit.jpg",
-        ]
+        ],
     },
 
-    aleksandra_stojanovic = {
-        name: "@aleksandra_stojanovic",
+    {
+        name: "aleksandra stojanovic",
+        username: '',
         thumbnailImage: "MLV_0118.jpg",
         images: [
             "20200820_152908 edit_2.jpg",
@@ -25,8 +29,9 @@ collections = [
         ],
     },
 
-    emilija_nikolic = {
-        name: "@emilija_nikolic",
+    {
+        name: "emilija nikolic",
+        username: '',
         thumbnailImage: "MLV_0174 edit_2.jpg",
         images: [
             "MLV_0174 edit_2.jpg",
@@ -35,26 +40,29 @@ collections = [
     },
 
     kristina_ristic = {
-        name: "@kristina_ristic",
+        name: "kristina ristic",
+        username: '',
         thumbnailImage: "MLV_0046_1.jpg",
         images: [
             "MLV_0046_1.jpg",
             "MLV_0062_1.jpg",
             "MLV_0154_1.jpg",
             "MLV_0159_1.jpg",
-        ]
+        ],
     },
 
-    ivan_dodov = {
-        name: "@ivan_dodov",
+    {
+        name: "ivan dodov",
+        username: '',
         thumbnailImage: "20200812_181734 edit.jpg",
         images: [
             "20200812_181734 edit.jpg",
         ],
     },
 
-    andjela_mladenovic = {
-        name: "@andjela_mladenovic",
+    {
+        name: "andjela mladenovic",
+        username: '',
         thumbnailImage: "173 edit_1.jpg",
         images: [
             "28 edit.jpg",
@@ -64,16 +72,18 @@ collections = [
         ],
     },
 
-    petar_petricevic = {
-        name: "@petar_petricevic",
+    {
+        name: "petar petricevic",
+        username: '',
         thumbnailImage: "MLV_0010 edit.jpg",
         images: [
             "MLV_0010 edit.jpg",
-        ]
+        ],
     },
 
     natasa_djordjevic = {
-        name: "@natasa_djordjevic",
+        name: "natasa djordjevic",
+        username: '',
         thumbnailImage: "20200908_174653 edit.jpg   'style='object-position: 35%;",
         images: [
             "20200908_171747 edit_1.jpg 'style='object-position: 60%;",
@@ -81,16 +91,18 @@ collections = [
         ],
     },
 
-    sanja_milev = {
-        name: "@sanja_milev",
+    {
+        name: "sanja milev",
+        username: '',
         thumbnailImage: "20200805_171742 edit.jpg",
         images: [
             "20200805_171742 edit.jpg",
         ],
     },
 
-    vlada_stojanovic = {
-        name: "@vlada_stojanovic",
+    {
+        name: "vlada stojanovic",
+        username: '',
         thumbnailImage: "20200528_133842 edit.jpg  'style='object-position: 65%;",
         images: [
             "20200528_133842 edit.jpg  'style='object-position: 65%;",
@@ -99,17 +111,21 @@ collections = [
     },
 ]
 
-showCollectionsThumbnail()
+// ON START
+showCollectionsThumbnails()
 
-function showCollectionsThumbnail() {
+function showCollectionsThumbnails() {
     for (i = 0; i < collections.length; i++) {
         collection = collections[i]
         document.getElementById("gallery").insertAdjacentHTML(
             "beforeend",
             "\
-            <div>\
+            <div class='galleryElement'>\
                 <a href='javascript:showCollectionImages(" + i + ");'>\
-                    <img class='galleryImg' src=' img/" + collection.name + "/compressed/" + collection.thumbnailImage + " '>\
+                    <img class='galleryImg' src=' img/collections/" + collection.name + "/compressed/" + collection.thumbnailImage + " '>\
+                </a>\
+                <a href='https://www.instagram.com/"+ collection.username + "/'>\
+                    <p class='collectionUsername'>"+ returnAtSymbolFor(collection.username) + collection.username + "</p>\
                 </a>\
             </div>\
             "
@@ -121,17 +137,37 @@ function showCollectionImages(collectionId) {
     clear()
     scrollToTop()
     collection = collections[collectionId]
+    if (collection.username.length > 0)
+        atSymbol = '@'
+    else
+        atSymbol = ''
+
+    if (collection.username.length > 0)
+        // ADD TITLE
+        document.getElementById("verticalSection").insertAdjacentHTML(
+            "afterbegin",
+            "\
+        <a href='https://www.instagram.com/"+ collection.username + "/'>\
+            <p class='galleryTitle'>"+ returnAtSymbolFor(collection.username) + collection.username + "</p>\
+        </a>\
+        "
+        )
 
     for (i = 0; i < 100; i++) {
         if (collection.images[i] == null)
             break
 
+        if (collection.username.length > 0)
+            atSymbol = '@'
+        else
+            atSymbol = ''
+
         document.getElementById("gallery").insertAdjacentHTML(
             "beforeend",
             "\
-            <div>\
+            <div class='galleryElement'>\
                 <a href='javascript:openFullScreen(" + collectionId + "," + i + ")'>\
-                    <img class='galleryImg' src='img/" + collection.name + "/compressed/" + collection.images[i] + "'>\
+                    <img class='galleryImg' src='img/collections/" + collection.name + "/compressed/" + collection.images[i] + "'>\
                 </a>\
             </div>\
             "
@@ -141,7 +177,7 @@ function showCollectionImages(collectionId) {
 
 function openFullScreen(collectionId, imageId) {
     closeFullScreen()
-    hideScroll()
+    disableScroll()
     diffuse()
     collection = collections[collectionId]
     collectionImage = collection.images[imageId]
@@ -153,7 +189,7 @@ function openFullScreen(collectionId, imageId) {
         "afterbegin",
         "\
         <div id='preview'>\
-            <img id='imagePreview' onclick='javascript:closeFullScreen()' src='img/" + collection.name + "/original/" + collectionImage + "'>\
+            <img id='imagePreview' onclick='javascript:closeFullScreen()' src='img/collections/" + collection.name + "/original/" + collectionImage + "'>\
         </div>\
         "
     )
@@ -162,7 +198,7 @@ function openFullScreen(collectionId, imageId) {
 
 function closeFullScreen() {
     undiffuse()
-    showScroll()
+    enableScroll()
     if (document.getElementById('preview') == null)
         return
     document.getElementById('preview').style.animation = 'fadeOut 0.2s'
@@ -191,10 +227,17 @@ function scrollToTop() {
     window.scrollTo(0, 0);
 }
 
-function showScroll() {
-    document.getElementsByTagName("html")[0].style.overflow = "overlay"
+function enableScroll() {
+    document.getElementById("html").style.overflow = "overlay"
 }
 
-function hideScroll() {
-    document.getElementsByTagName("html")[0].style.overflow = "hidden"
+function disableScroll() {
+    document.getElementById("html").style.overflow = "hidden"
+}
+
+function returnAtSymbolFor(collectionUsername) {
+    if (collectionUsername.length > 0)
+        return '@'
+    else
+        return ''
 }

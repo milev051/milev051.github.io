@@ -7,6 +7,13 @@
   column-gap: 4em;
 }
 
+.galleryTitle {
+  color: black;
+  margin-top: -0.7em;
+  margin-bottom: -0.5em;
+  font-size: 2.5em;
+}
+
 .galleryImg {
   border-radius: .5em;
   object-fit: cover;
@@ -18,15 +25,23 @@
 
 #imagePreview {
   z-index: 3;
-  margin: 0;
   position: fixed;
+
   max-width: 95%;
   max-height: 95%;
+
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
   border-radius: 1em;
+}
+
+.collectionUsername {
+  color: black;
+  margin-top: 0.25em;
+  font-size: 1.7em;
 }
 
 #diffuse {
@@ -42,4 +57,21 @@
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
 
+  .galleryTitle {
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+    font-size: 2.25em;
+  }
+
+  .collectionUsername {
+    margin-top: 0.4em;
+    font-size: 1.5em;
+  }
+
+  .galleryImg {
+    object-fit: cover;
+    
+    height: 25em;
+    width: 20em;
+  }
 }
