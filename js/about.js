@@ -44,6 +44,12 @@ sections = [
                 level: 4,
                 link: "https://code.visualstudio.com/",
             },
+
+            {
+                name: "Vim.png",
+                level: 1,
+                link: "https://www.vim.org/",
+            },
         ]
     },
 
@@ -127,11 +133,11 @@ sections = [
                 link: "https://en.wikipedia.org/wiki/C%2B%2B",
             },
 
-            // {
-            //     name: "C#.png",
-            //     level: 3,
-            //     link: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
-            // },
+            {
+                name: 'C Sharp.png',
+                level: 3,
+                link: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+            },
 
             {
                 name: "Java.jpg",
@@ -155,12 +161,6 @@ sections = [
                 name: "Javascript.png",
                 level: 3,
                 link: "https://en.wikipedia.org/wiki/JavaScript",
-            },
-
-            {
-                name: "Vim.png",
-                level: 1,
-                link: "https://www.vim.org/",
             },
 
             {

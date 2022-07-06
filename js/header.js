@@ -1,3 +1,7 @@
+// document.body.insertAdjacentHTML(
+//     "afterbegin",
+//     "<hr>"
+// )
 document.body.insertAdjacentHTML(
     "afterbegin",
     "\
@@ -11,3 +15,7 @@ document.body.insertAdjacentHTML(
     </header>\
   "
 )
+// document.body.insertAdjacentHTML(
+//     "beforeend",
+//     "<hr>"
+// )

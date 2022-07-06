@@ -38,9 +38,8 @@ horizontalSection section {
 }
 
 hr {
-  width: 25%;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
+  width: 40em;
+  margin: 3em 0;
   display: inline-flex;
 
   border-width: 0.01em;
@@ -58,6 +57,11 @@ hr {
   padding: 3em;
 }
 
+.bigSidePadding {
+  padding-right: 9em;
+  padding-left: 9em;
+}
+
 .smallGap {
   row-gap: 1em;
 }
@@ -66,6 +70,12 @@ hr {
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
   html {
     padding: 2em;
+  }
+
+  hr {
+    width: 15em;
+    margin-top: 2em;
+    border-width: 0.005em;
   }
   
   .rowGap {
@@ -80,6 +90,11 @@ hr {
 
   .padding {
     padding: 2em;
+  }
+
+  .bigSidePadding {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .smallGap {
