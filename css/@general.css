@@ -20,6 +20,9 @@ verticalSection {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.rowGap {
   row-gap: 5em;
 }
 
@@ -28,7 +31,6 @@ horizontalSection {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  row-gap: 5em;
 }
 
 horizontalSection section {
@@ -52,7 +54,7 @@ hr {
   border-radius: .5em;
 }
 
-.breath {
+.padding {
   padding: 3em;
 }
 
@@ -65,12 +67,8 @@ hr {
   html {
     margin: 2em;
   }
-
-  horizontalSection {
-    row-gap: 3em;
-  }
-
-  verticalSection {
+  
+  .rowGap {
     row-gap: 3em;
   }
 
@@ -80,7 +78,7 @@ hr {
     border-radius: .5em;
   }
 
-  .breath {
+  .padding {
     padding: 2em;
   }
 

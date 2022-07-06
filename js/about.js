@@ -265,14 +265,14 @@ sections = [
 sections.forEach(section => {
 
     // CREATE SECTION
-    document.getElementById("programSkills").insertAdjacentHTML(
+    document.getElementById("container").insertAdjacentHTML(
         "beforeend",
         "\
         <section class='titleAndText'>\
         \
             <p class='verticalSectionTitle'>"+ section.name + "</p>\
             \
-            <horizontalSection class='fitContent border breath' id='section'>\
+            <horizontalSection class='fitContent border padding' id='section'>\
             " + returnAllProgramsFrom(section) + "\
             </horizontalSection>\
             \
