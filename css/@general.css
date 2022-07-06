@@ -8,7 +8,7 @@
 
 html {
   overflow-y: scroll;
-  margin: 3em;
+  padding: 3em;
 }
 
 .fitContent {
@@ -65,7 +65,7 @@ hr {
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
   html {
-    margin: 2em;
+    padding: 2em;
   }
   
   .rowGap {
