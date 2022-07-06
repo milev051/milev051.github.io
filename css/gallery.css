@@ -56,6 +56,14 @@
 
 /* PORTRAIT MODE */
 @media (max-aspect-ratio: 9/10), (max-width: 1030px) {
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    row-gap: 2em;
+    column-gap: 3em;
+  }
 
   .galleryTitle {
     color: black;
@@ -65,8 +73,8 @@
   }
 
   .galleryImg {
-    height: 25em;
-    width: 20em;
+    height: 15em;
+    width: 10em;
   }
 
   .collectionUsername {
