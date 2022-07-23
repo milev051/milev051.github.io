@@ -41,7 +41,7 @@ collections = [
             "MLV_0154_1.jpg",
             "MLV_0159_1.jpg" + objectPosition(0, 20),
             "MLV_0207_1.jpg",
-            "MLV_0131_2",
+            "MLV_0131_2.jpg",
         ],
     },
 
