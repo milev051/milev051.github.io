@@ -37,9 +37,11 @@ collections = [
         thumbnailImage: "MLV_0046_1.jpg" + objectPosition(0, 80),
         images: [
             "MLV_0046_1.jpg" + objectPosition(0, 80),
-            "MLV_0062_1.jpg",
+            "MLV_0062_3.jpg",
             "MLV_0154_1.jpg",
             "MLV_0159_1.jpg" + objectPosition(0, 20),
+            "MLV_0207_1.jpg",
+            "MLV_0131_2",
         ],
     },
 
