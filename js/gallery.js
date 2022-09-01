@@ -111,7 +111,13 @@ showCollectionsThumbnails()
 function showCollectionsThumbnails() {
     for (i = 0; i < collections.length; i++) {
         collection = collections[i]
-        document.getElementById("gallery").insertAdjacentHTML(
+createElementThumbnailButton()
+        
+    }
+}
+
+function createElementThumbnailButton() {
+document.getElementById("gallery").insertAdjacentHTML(
             "beforeend",
             "\
             <div class='galleryElement'>\
@@ -124,7 +130,6 @@ function showCollectionsThumbnails() {
             </div>\
             "
         )
-    }
 }
 
 function showCollectionImages(collectionId) {
