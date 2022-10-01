@@ -10,7 +10,9 @@ horizontalSection section {
     width: 125px;
     border-radius: 100%;
     margin-top: -10px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    border: solid;
+    border-width: 2px;
 }
 
 .titleAndText {
@@ -47,7 +49,8 @@ horizontalSection section {
     .profilePicture {
         width: 85px;
         margin-top: -5px;
-        margin-bottom: 15px
+        margin-bottom: 15px;
+        border-width: 2px;
     }
 
     horizontalSection {
