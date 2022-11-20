@@ -1,0 +1,23 @@
+Potrebno je napraviti veb prezentaciju na proizvoljnu temu
+
+Voditi racuna o organizaciji foldera (posebni folderi za slike, skripte i css)
+
+Potrebno je napraviti najmanje èetiri veb stranice
+
+Sve stranice moraju imati jedinstven dizajn. Odnosno sve stranice moraju biti dizajnirane korišæenjem CSS-a, koji je   napravljen u skladu sa projektom. Nije dozvoljeno koristiti gotove CSS fajlove, koji nisu prilagoðeni sadržaju
+
+Nije dozvoljeno preuzimanje gotovih Bootstrap tema sa interneta kao ni korišæenje Bootstrap funkcionalnosti. Nije   dozvoljeno korišæenje nikakvih okvira
+
+Pozicioniranje izvršiti putem CSS-a korišæenjem Flexbox i/ili Grid Layout funkcionalnosti
+
+Na jednoj od stranica mora postojati forma sa više razlièitih polja (text, buttons, radio, checkbox, select.. ). Pomoæu   JavaScript-a ili jQuery-ja izvršiti obradu (validaciju) forme (bar tri dogaðaja). Prikupljene podatke iz forme obavezno   prikazati na neki naèin, na primer preko pop-up box-a
+
+Obezbediti postojanje menija 
+
+Upotrebiti najmanje jednu dodatnu funkcionalnost korišæenjem jQuery plugin-ova u skladu sa tematikom veb   prezentacije
+
+Obezbediti responzivnost sajta tako da se ispravno prikazuje na desktop raèunaru, tabletu i mobilnom telefonu
+(za više ocene na mobilnom prikazu veb sajta implementirati burger menu)
+
+Obezbediti barem tri dodatne funkcionalnosti posetiocima uz pomoæ JavaScript-a korišæenjem objekata Date,   Window, Document.. 
+(zahtev za više ocene)
