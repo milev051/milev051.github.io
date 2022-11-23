@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function playMusic() {
-  if (audio == null) {
-    var audio = new Audio("../media/song-02.mp3");
-    audio.play();
-    audio.loop = true;
-  }
+  var audio = new Audio("./media/song-02.mp3");
+  audio.play();
+  audio.loop = true;
 }

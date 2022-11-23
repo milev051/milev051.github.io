@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function playMusic() {
-  var audio = new Audio("../media/song-04.mp3");
+  var audio = new Audio("./media/song-04.mp3");
   audio.play();
   audio.loop = true;
 }

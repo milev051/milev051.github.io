@@ -34,7 +34,6 @@ $(".item-card").click(function () {
   $("#form").css("display", "flex");
 });
 
-
 $("#submit").click(function () {
   getInfo();
   if (
@@ -86,9 +85,7 @@ function getInfo(params) {
 }
 
 function playMusic() {
-  if (audio == null) {
-    var audio = new Audio("../media/song-03.mp3");
-    audio.play();
-    audio.loop = true;
-  }
+  var audio = new Audio("./media/song-03.mp3");
+  audio.play();
+  audio.loop = true;
 }
