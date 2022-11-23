@@ -128,10 +128,6 @@ footer p {
 }
 @media (max-width: 1000px) {
 
-  * {
-    overflow: hidden;
-  }
-
   /* IMG */
   #biography-box {
     position: relative;
