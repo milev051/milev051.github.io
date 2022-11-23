@@ -24,7 +24,7 @@ function toggleSideNav() {
 }
 
 function openSideNavigation() {
-  $(".hamburger-icon").css("content", "url('../img/close-black.png')");
+  $(".hamburger-icon").css("content", "url('./img/close-black.png')");
   $("html").css("overflow", "hidden");
   $("nav").css("display", "flex");
   $("nav").css("flex-direction", "column");
