@@ -1,7 +1,7 @@
 sections = [
 
     {
-        name: "Okruženja i OS",
+        name: "Environments And Operating Systems",
         programs: [
             {
                 name: "Windows.jpg",
@@ -54,7 +54,7 @@ sections = [
     },
 
     {
-        name: "Editovanje",
+        name: "Editing",
         programs: [
             {
                 name: "Adobe Photoshop.png",
@@ -119,7 +119,7 @@ sections = [
     },
 
     {
-        name: "Programski jezici",
+        name: "Programming Languages",
         programs: [
             {
                 name: "C.png",
@@ -219,7 +219,7 @@ sections = [
     },
 
     {
-        name: "Ostali programi",
+        name: "Other Programs",
         programs: [
             {
                 name: "OBS.jfif",

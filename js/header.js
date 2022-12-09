@@ -8,8 +8,8 @@ document.body.insertAdjacentHTML(
     <header>\
         <p class='header-logo-holder' href='/'><img src='img/logo/logo black.png' alt='' class='header-logo'></p>\
         <nav>\
-            <a class='nav-element' href='gallery'>gallery</a>\
-            <a class='nav-element' href='about'>about</a>\
+            <a class='nav-element' href='gallery'>Gallery</a>\
+            <a class='nav-element' href='about'>About</a>\
         </nav>\
     </header>\
   "
