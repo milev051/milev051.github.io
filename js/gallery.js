@@ -208,7 +208,7 @@ function closeFullScreen() {
 }
 
 function diffuse() {
-    document.body.insertAdjacentHTML("afterbegin", "<div id='diffuse'></div>")
+    document.body.insertAdjacentHTML("afterbegin", "<div id='diffuse' onclick='javascript:closeFullScreen()'></div>")
     document.getElementById("diffuse").style.animation = 'fadeIn 0.2s'
 }
 
