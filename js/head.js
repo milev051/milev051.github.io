@@ -11,7 +11,7 @@ document.head.insertAdjacentHTML(
     <link rel='stylesheet' href='css/@general.css'>
     <link rel='stylesheet' href='css/@header.css'>
     <link rel='stylesheet' href='css/@text.css'>
-    <link rel='stylesheet' href='css/"+ window.location.pathname.split("/").pop() + ".css'>
+    <link rel='stylesheet' href='css/`+ window.location.pathname.split("/").pop() + `.css'>
     
     <link rel='preconnect' href='https://fonts.googleapis.com'>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
